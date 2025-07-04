@@ -74,7 +74,7 @@ export default function App() {
   return (
     <Router>
       <div className="max-w-sm min-w-[280px] max-h-[100svh] mx-auto pt-10 overflow-hidden">
-        <header className="mx-auto mb-4 text-center">
+        <header className="relative mx-auto mb-4 text-center">
           <Link to="/">
             <h1 className="h-[4rem] font-Timmana mt-2 mx-10 text-[#00FFC2] text-[4rem]">
               Singing!
@@ -84,7 +84,7 @@ export default function App() {
           {/* 도움말 버튼 */}
           <Link
           to="Help"
-          className="w-6 h-6 fixed top-6 right-4 border-2 rounded-full text-sm border-[#737373] text-[#737373]
+          className="w-6 h-6 absolute -top-4 right-4 border-2 rounded-full text-sm border-[#737373] text-[#737373]
           hover:border-[#f2f2f2] hover:text-[#f2f2f2] duration-300">
             ?
           </Link>
