@@ -63,7 +63,7 @@ export default function Main({
 	}, [query])
 
 	//현재 카테고리나 검색등에 맞는 노래만 필터링.
-	function filtering() {
+	const filtering = () => {
 		if (currentCategory === "전체") {
 			setFiltedSons(
 				songList

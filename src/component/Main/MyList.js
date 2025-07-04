@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 import DragZone from "../Delate/DragZone";
 import Delate from "../Delate/Delate";

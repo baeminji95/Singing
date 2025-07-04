@@ -5,7 +5,7 @@ import List from "../../class/class";
 
 import AlertAlbumArt from "../AlertAlbumArt";
 import Preview from "./Preview"
-import Create_Category from "./CreateCategory";
+import CreateCategory from "./CreateCategory";
 import SelectKey from "./SelectKey";
 import Inputs from "./Inputs";
 import UploadAlubmArt from "./UploadAlubmArt";
@@ -195,7 +195,7 @@ export default function UserCreatePage({
 						</div>
 						<div className="grow flex flex-col justify-between gap-2">
 
-							<Create_Category
+							<CreateCategory
 								filterList={filterList}
 								open={openCate}
 								setOpen={setOpneCate}
