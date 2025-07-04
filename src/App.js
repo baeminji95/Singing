@@ -13,7 +13,7 @@ const seed1 = new List(
   "singer",
   "A#",
   "댄스",
-  "./public/logo/logo512.png",
+  '/logo/logo192.png',
   "memo1",
   "memo2",
   "seed1"
@@ -23,7 +23,7 @@ const seed2 = new List(
   "singer2",
   "Bb",
   "발라드",
-  "./public/logo/logo512.png",
+  '/logo/logo192.png',
   "memo1",
   "",
   "seed2"
