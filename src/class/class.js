@@ -15,7 +15,7 @@ export default class List {
     this.singer = singer;
     this.key = key;
     this.liked = false;
-    this.albumArt = albumArt ? albumArt : "/logo/logo512.png" ;
+    this.albumArt = albumArt ? albumArt : "./public/logo/logo512.png" ;
     this.category = category;
     this.memo1 = memo1;
     this.memo2 = memo2;

@@ -784,7 +784,7 @@ function MyList({ num }) {
         <div className="flex justify-between items-center">
             <div className="flex">
                 <div className="w-9 h-9 relative">
-                    <img src="/logo/logo512.png" alt="기본이미지" />
+                    <img src="./public/logo/logo512.png" alt="기본이미지" />
                     {/* 좋아요 */}
                     <div style={{ display: num === 3 ? "block" : "none" }}
                         className="absolute -top-[0.8rem] -right-[0.7rem] w-6 h-6 rounded-full border-[3px] border-[#f8ff2a]"></div>
