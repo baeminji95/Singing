@@ -99,13 +99,15 @@ export default function EditCategoryListPage({
             let updatedCategoryies = [...categories, { name: query, editedName: query }];
             //기타 카테고리가 있는지 확인(기타가 있으면 마지막으로 고정시키기 위함)
             const hasEtc = newCate.includes("기타") || newCate.includes("기타removeMode");
-            if(hasEtc){
-                if (index < 0 || index >= arr.length) return updatedCategoryies;
+            if (hasEtc) {
+                const etcIndex = updatedCategoryies.findIndex(cat => cat.editedName === "기타" || cat.editCateName === "기타removeMode");
+                if (etcIndex === updatedCategoryies.length - 1) {
+                    return updatedCategoryies;
+                } else {
+                    const Etc = updatedCategoryies.splice(etcIndex, 1)[0];
 
-                const EtcIndex = updatedCategoryies.findIndex(cat => cat.editedName === "기타" || cat.editCateName === "기타removeMode");
-                const Etc = updatedCategoryies.splice(EtcIndex, 1)[0];
-
-                updatedCategoryies.push(Etc);
+                    updatedCategoryies.push(Etc);
+                }
             }
             setcategories(updatedCategoryies);
             setQuery("");
