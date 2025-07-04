@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/Singing/static/css/main.f44d6d2c.css",
-    "main.js": "/Singing/static/js/main.5e8f8b5d.js",
+    "main.js": "/Singing/static/js/main.b5971625.js",
     "static/js/592.85a6c26b.chunk.js": "/Singing/static/js/592.85a6c26b.chunk.js",
     "static/media/NotoSansKR-VariableFont_wght.ttf": "/Singing/static/media/NotoSansKR-VariableFont_wght.33752a94ca5252213de8.ttf",
     "static/media/Inter-VariableFont_slnt,wght.ttf": "/Singing/static/media/Inter-VariableFont_slnt,wght.853e01975d2783d9fa29.ttf",
     "static/media/Timmana-Regular.ttf": "/Singing/static/media/Timmana-Regular.777ba64f8b11518c0aa7.ttf",
     "index.html": "/Singing/index.html",
     "main.f44d6d2c.css.map": "/Singing/static/css/main.f44d6d2c.css.map",
-    "main.5e8f8b5d.js.map": "/Singing/static/js/main.5e8f8b5d.js.map",
+    "main.b5971625.js.map": "/Singing/static/js/main.b5971625.js.map",
     "592.85a6c26b.chunk.js.map": "/Singing/static/js/592.85a6c26b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f44d6d2c.css",
-    "static/js/main.5e8f8b5d.js"
+    "static/js/main.b5971625.js"
   ]
 }
