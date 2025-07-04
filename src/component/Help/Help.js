@@ -527,7 +527,7 @@ export default function UserGuide() {
                                             <EditCat num={2} />
                                         </div>
                                         <p className="pt-2 pb-2 px-1">
-                                            카테고리를 삭제 버튼입니다.
+                                            해당 카테고리 삭제 버튼입니다.
                                             <br />
                                             <span className="text-yellow-400">※주의※</span>삭제한 카테고리내에 노래가 존재하는 경우 모두 '기타' 카테고리로 이동됩니다.
                                         </p>
