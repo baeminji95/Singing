@@ -58,7 +58,7 @@ export default function EditCategoryListPage({
     }
 
     //카테고리 추가
-    function addCate(li) {
+    function addCate() {
         const newCate = categories.map(li => li.editedName);
 
         //삭제할 카테고리
@@ -145,11 +145,10 @@ export default function EditCategoryListPage({
             })
         }
 
-
         categories.map(cate => {
             if (cate.name !== cate.editedName) {
                 editSongList = editSongList.map(song => {
-                    if (song.category !== cate.name) song;
+                    if (song.category !== cate.name) return song;
 
                     if (cate.editedName.indexOf("removeMode") === -1) {
                         return { ...song, category: cate.editedName }
@@ -364,7 +363,7 @@ export default function EditCategoryListPage({
                         <button
                             type="button"
                             className="w-6 h-6 relative flex justify-center items-center group border p-1 duration-300 hover:border-[#00FFC2]"
-                            onClick={() => addCate(li)}
+                            onClick={addCate}
                         >
                             <div className="w-[1px] h-[0.7rem] bg-[#f2f2f2] group-hover:bg-[#00FFC2] duration-300"></div>
                             <div className="w-[0.7rem] h-[1px]  absolute bg-[#f2f2f2] group-hover:bg-[#00FFC2] duration-300"></div>
