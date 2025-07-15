@@ -56,7 +56,7 @@ export default function MyList({ songList, setSongList, filterList, filtedSongs 
         id={song.id}
         style={{
           height: editId === song.id ? "30rem" : "",
-          maxHeight: editId === song.id ? "30rem" : showMemoArr.indexOf(song.id) === -1 ?
+          maxHeight: editId === song.id ? "30rem" : !showMemoArr.includes(song.id) ?
             "4.5rem"
             :
             "9rem"
@@ -68,7 +68,6 @@ export default function MyList({ songList, setSongList, filterList, filtedSongs 
       >
         {/* 수정 폼*/}
         <Edit
-          key={`key-${song.id}`}
           id={song.id}
           editId={editId}
           songList={songList}
